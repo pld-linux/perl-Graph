@@ -1,17 +1,17 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Graph perl module
 Summary(pl):	Modu³ perla Graph
 Name:		perl-Graph
-Version:	0.20101
-Release:	2
+Version:	0.20102
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
-# Source0-md5:	c19e24fe8faa7be2d4cf30a86488fe5e
+# Source0-md5:	5b4f5b1f9d5a8c6b4b1f862ced2f4998
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Heap >= 0.01
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -31,7 +31,7 @@ Graph - grafy i algorytmy z nimi zwi±zane.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
