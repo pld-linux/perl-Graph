@@ -3,7 +3,7 @@ Summary:	Graph perl module
 Summary(pl):	Modu³ perla Graph
 Name:		perl-Graph
 Version:	0.005
-Release:	3
+Release:	4
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc {README,TODO}.gz
 
 %{perl_sitelib}/Graph.pm
-%{perl_sitelib}/Graph
-%{perl_sitearch}/auto/Graph
+%{perl_sitelib}/Graph/*
+%{perl_sitearch}/auto/Graph/.packlist
 
 %{_mandir}/man3/*
