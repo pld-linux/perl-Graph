@@ -29,7 +29,7 @@ Graph - grafy i algorytmy z nimi zwi±zane.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{!?_without_tests:%{__make} test}
 
