@@ -25,7 +25,7 @@ Graph - grafy i algorytmy grafów.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
