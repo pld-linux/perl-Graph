@@ -7,7 +7,7 @@ Summary:	Graph perl module
 Summary(pl):	Modu³ perla Graph
 Name:		perl-Graph
 Version:	0.20101
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
