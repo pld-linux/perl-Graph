@@ -3,8 +3,8 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-Summary:	Graph perl module
-Summary(pl):	Modu³ perla Graph
+Summary:	Graph - graph operations
+Summary(pl):	Graph - operacje na grafach
 Name:		perl-Graph
 Version:	0.20102
 Release:	1
@@ -20,10 +20,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Graph - graphs and graph algorithms.
+Graph - graphs and graph algorithms. This is just a front-end class
+for Graph::Directed and Graph::Base.
 
 %description -l pl
-Graph - grafy i algorytmy z nimi zwi±zane.
+Graph - grafy i algorytmy z nimi zwi±zane. Jest to po prostu klasa
+zewnêtrzna dla Graph::Directed i Graph::Base.
 
 %prep
 %setup -q -n Graph-%{version}
