@@ -8,7 +8,8 @@ Summary(pl):	Modu³ perla Graph
 Name:		perl-Graph
 Version:	0.20102
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
 # Source0-md5:	5b4f5b1f9d5a8c6b4b1f862ced2f4998
