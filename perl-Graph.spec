@@ -27,7 +27,7 @@ Graph - grafy i algorytmy z nimi zwi±zane.
 %setup -q -n Graph-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{!?_without_tests:%{__make} test}
 
