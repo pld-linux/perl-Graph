@@ -10,7 +10,7 @@ Version:	0.20101
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Graph/Graph-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Heap >= 0.01
 BuildRequires:	rpm-perlprov >= 3.0.3-16
