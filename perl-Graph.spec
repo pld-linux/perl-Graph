@@ -11,6 +11,7 @@ Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
+# Source0-md5:	c19e24fe8faa7be2d4cf30a86488fe5e
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Heap >= 0.01
 BuildRequires:	rpm-perlprov >= 4.1-13
