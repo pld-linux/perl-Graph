@@ -7,8 +7,9 @@ Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Graph/Graph-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	perl-Heap >= 0.01
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -16,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Graph - graphs and graph algorithms.
 
 %description -l pl
-Graph - grafy i algorytmy grafów.
+Graph - grafy i algorytmy z nimi zwi±zane.
 
 %prep
 %setup -q -n Graph-%{version}
@@ -30,14 +31,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README Changes
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README Changes
 %{perl_sitelib}/Graph.pm
 %{perl_sitelib}/Graph/*
 %{_mandir}/man3/*
