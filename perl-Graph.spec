@@ -2,9 +2,9 @@
 Summary:	Graph perl module
 Summary(pl):	Modu³ perla Graph
 Name:		perl-Graph
-Version:	0.005
-Release:	4
-Copyright:	GPL
+Version:	0.201
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Graph/Graph-%{version}.tar.gz
@@ -38,14 +38,14 @@ make install DESTDIR=$RPM_BUILD_ROOT
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        README TODO
+        README Changes
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,TODO}.gz
+%doc {README,Changes}.gz
 
 %{perl_sitelib}/Graph.pm
 %{perl_sitelib}/Graph/*
