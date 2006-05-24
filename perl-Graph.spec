@@ -13,8 +13,8 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
 # Source0-md5:	81374c82924387574201fd01adfdb2fa
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Heap >= 0.01
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,17 +44,14 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 rm -f $RPM_BUILD_ROOT%{perl_archlib}/perllocal.pod
 rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Graph/.packlist
-
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/Graph.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
 %doc README Changes
 %{perl_vendorlib}/Graph.pm
-%{perl_vendorlib}/Graph.pod
 %{perl_vendorlib}/Graph/*
-
 %{_mandir}/man3/*
