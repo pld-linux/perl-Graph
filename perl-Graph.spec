@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Graph - graph operations
-Summary(pl):	Graph - operacje na grafach
+Summary(pl.UTF-8):   Graph - operacje na grafach
 Name:		perl-Graph
 Version:	0.75
 Release:	3
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Graph - graphs and graph algorithms. This is just a front-end class
 for Graph::Directed and Graph::Base.
 
-%description -l pl
-Graph - grafy i algorytmy z nimi zwi±zane. Jest to po prostu klasa
-zewnêtrzna dla Graph::Directed i Graph::Base.
+%description -l pl.UTF-8
+Graph - grafy i algorytmy z nimi zwiÄ…zane. Jest to po prostu klasa
+zewnÄ™trzna dla Graph::Directed i Graph::Base.
 
 %prep
 %setup -q -n Graph-%{version}
