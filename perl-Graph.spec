@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Graph - graph operations
-Summary(pl.UTF-8):   Graph - operacje na grafach
+Summary(pl.UTF-8):	Graph - operacje na grafach
 Name:		perl-Graph
 Version:	0.75
 Release:	3
