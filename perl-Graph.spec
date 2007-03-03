@@ -6,13 +6,13 @@
 Summary:	Graph - graph operations
 Summary(pl.UTF-8):	Graph - operacje na grafach
 Name:		perl-Graph
-Version:	0.75
-Release:	3
+Version:	0.81
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
-# Source0-md5:	82cd9b9ffda237b1d278a3189eb0f824
+# Source0-md5:	8400bd615c74de11644746709cbe7fe3
 BuildRequires:	perl-Heap >= 0.01
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
