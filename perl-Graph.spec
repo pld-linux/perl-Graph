@@ -7,7 +7,7 @@ Summary:	Graph - graph operations
 Summary(pl.UTF-8):	Graph - operacje na grafach
 Name:		perl-Graph
 Version:	0.91
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Graph.pm
 %{perl_vendorlib}/Graph/*
 %{perl_vendorlib}/Heap071/
-%{perl_vendorlib}/auto/Heap071/Elem/autosplit.ix
-%{perl_vendorlib}/auto/Heap071/Fibonacci/autosplit.ix
+%{perl_vendorlib}/auto/Heap071/
 %{_mandir}/man3/*
