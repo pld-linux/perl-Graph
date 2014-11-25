@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
-#
+
+%define		pdir	Graph
 %include	/usr/lib/rpm/macros.perl
 Summary:	Graph - graph operations
 Summary(pl.UTF-8):	Graph - operacje na grafach
@@ -13,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
 # Source0-md5:	21c7c5b108fdf898ca1679a0509ccbb2
+URL:		http://search.cpan.org/dist/Graph/
 BuildRequires:	perl-Heap >= 0.01
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
