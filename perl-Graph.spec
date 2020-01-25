@@ -3,7 +3,6 @@
 %bcond_without	tests # do not perform "make test"
 
 %define		pdir	Graph
-%include	/usr/lib/rpm/macros.perl
 Summary:	Graph - graph operations
 Summary(pl.UTF-8):	Graph - operacje na grafach
 Name:		perl-Graph
