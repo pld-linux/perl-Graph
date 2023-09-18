@@ -6,15 +6,16 @@
 Summary:	Graph - graph operations
 Summary(pl.UTF-8):	Graph - operacje na grafach
 Name:		perl-Graph
-Version:	0.94
+Version:	0.9727
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graph/Graph-%{version}.tar.gz
-# Source0-md5:	21c7c5b108fdf898ca1679a0509ccbb2
+# Source0-md5:	96c654566ade2bf0e8b9eb2f6d76495e
 URL:		http://search.cpan.org/dist/Graph/
 BuildRequires:	perl-Heap >= 0.01
+BuildRequires:  perl-Set-Object
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -56,6 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/Graph
 %{perl_vendorlib}/Graph.pm
 %{perl_vendorlib}/Graph/*
-%{perl_vendorlib}/Heap071/
-%{perl_vendorlib}/auto/Heap071/
 %{_mandir}/man3/*
